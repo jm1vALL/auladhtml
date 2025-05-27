@@ -6,23 +6,25 @@
     <title>Document</title>
 <style>
     h1
+        {
+           color: rgb(255, 255, 255);
+           background-color: rgb(221, 0, 0);
+           text-align: center;
+        }
 
-    {
-        background-color: cadetblue;
-        color: whitesmoke;
-        text-align: center;
-    }
-    table, th, td
+     table, tr, th, td
+        
+        {
+            border:1px solid rgb(255, 19, 19);
+            border-collapse: collapse;
+            padding: 5px;
+        }
 
+        th
     {
-        border: 1px solid rgb(255, 255, 255);
-        border-collapse: collapse;
-        padding: 5px;
-    }
-    
-    th
-    {
-        background-color: red;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 0);
+
     }
 
 </style>
@@ -47,10 +49,104 @@
     <tr>
         <td>Segunda</td>
         <td><b>A/B</b></td>
-        <TD>Portugues</TD>
-        <td><B>PE</B></td>
+        <TD colspan="2">IW</TD>
+        <td><B>EACENT</B></td>
+        <TD>AD/APW</TD>
         <TD>Fisica</TD>
-        <TD rowspan="2">INGLES</TD>
+        <td>AD/PA</td>
+    </tr>
+
+    <TR>
+        <td>Terça</td>
+        <td>A/B</td>
+        <TD>Portugues</TD>
+        <TD colspan="2">PE</TD>
+        <TD>Fisica</TD>
+        <td colspan="2">Ingles</td>
+    </TR>
+
+    <tr>
+        <td>Quarta</td>
+        <td>A/B</td>
+        <td>Portugues</td>
+        <td>FI/PA</td>
+         <TD>PA/FI</TD>
+    </tr>
+
+   
+  </table>
+<h3>Exercicio de rowspan e colspan</h3>
+  <table>
+
+<tr>
+    <th>DIA DA SEMANA</th>
+    <th>turma</th>
+    <th>aula 1</th>
+    <th>aula 2</th>
+    <th>aula 3</th>
+    <th>aula 4</th>
+    <th>aula 5</th>
+    <th>aula 6</th>
+</tr>
+    <TR>
+        <TD rowspan="2">Domingo</TD>
+        <td>a</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+
+    </TR>
+
+    <tr>
+        <td>b</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+
+    
+    <TR>
+        <TD rowspan="2">Segunda</TD>
+        <td>a</td>
+        <td colspan="2">Guilherme</td>
+        <td>vagner</td>
+        <td>rafael</td>
+        <td rowspan="2">vagner</td>
+        <td>rafael</td>
+       
+    </TR>
+
+    <tr>
+        <td>b</td>
+        <td colspan="2">andricson</td>
+        <td>janete</td>
+        <td>ronaldo</td>
+        <td>andricson</td>
+      
+    </tr>
+
+    
+    <TR>
+        <TD rowspan="2">Terça</TD>
+        <td>a</td>
+        <td rowspan="2">isabella</td>
+        <td rowspan="2" colspan="2" style="text-align: center;">jaqueline</td>
+        <td rowspan="2">vagner</td>
+        <td rowspan="2" colspan="2" style="text-align: center;">celene</td>
+      
+    </TR>
+
+    <tr>
+        <td>b</td>
+        
     </tr>
   </table>
 </body>
