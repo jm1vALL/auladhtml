@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1
+            {
+               color: rgb(255, 255, 255);
+               background-color: rgb(9, 0, 136);
+               text-align: center;
+            }
+    
+         table, tr, th, td
+            
+            {
+                border:1px solid;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+    
+            th
+        {
+            color: rgb(255, 255, 255);
+            background-color: rgb(2, 0, 126);
+    
+        }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Horário Semanal-Turmas A,B e C</h1>
+
+    <table>
+
+    <tr>
+        <th>Dia</th>
+        <th>Turma</th>
+        <th>1° período</th>
+        <th>2° período</th>
+        <th>3° período</th>
+        <th>4° período</th>
+        <th>5° período</th>
+    </tr>
+
+    <tr>
+        <td>Segunda</td>
+        <td>A</td>
+        <td>Matematica</td>
+        <td>Matematica</td>
+        <td>Portugues</td>
+        <td>Historia</td>
+        <td>Educação fisica</td>
+    </tr>
+
+    <tr>
+        <td>Segunda</td>
+        <td>B</td>
+        <td></td>
+        <TD>Matematica</TD>
+        <td>Matematica</td>
+        <td>Geografia</td>
+        <td>Educação Fisica</td>
+    </tr>
+
+    <tr>
+        <td>Segunda</td>
+        <td>C</td>
+        <td>Biologia</td>
+        <td>Fisica</td>
+        <td>Fisica</td>
+        <td>Quimica</td>
+        <td>Educação Fisica</td>
+    </Tr>
+
+    <tr>
+        <td>Terça</td>
+        <td>A</td>
+        <td>Ingles</td>
+        <td>ciencias</td>
+        <td>ciencias</td>
+        <td>ciencias</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Terça</td>
+        <td>B</td>
+        <td>Quimica</td>
+        <td>Historia</td>
+        <td>Historia</td>
+        <td>Historia</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>Terça</td>
+        <td>C</td>
+        <td>ciencias</td>
+        <td>ciencias</td>
+        <td>ciencias</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+<p style="color: red;">Agora vamos aplicar o colspan e o rowspan na tabela acima, gerando uma tabela com linhas e colunas mescladas</p>
+
+<table style="text-align: center;">
+
+    <tr>
+        <th>Dia</th>
+        <th>Turma</th>
+        <th>1° período</th>
+        <th>2° período</th>
+        <th>3° período</th>
+        <th>4° período</th>
+        <th>5° período</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Segunda</td>
+        <td>A</td>
+        <td colspan="2">Matematica</td>
+    
+        <td>Portugues</td>
+        <td>Historia</td>
+        <td rowspan="3">Educação fisica</td>
+    </tr>
+
+    <tr>
+        <td>B</td>
+        <td></td>
+        <TD>Matematica</TD>
+        <td>Matematica</td>
+        <td>Geografia</td>
+       
+    </tr>
+
+    <tr>
+       
+        <td>C</td>
+        <td>Biologia</td>
+        <td colspan="2">Fisica</td>
+        <td>Quimica</td>
+    </Tr>
+
+    <tr>
+        <td rowspan="3">Terça</td>
+        <td>A</td>
+        <td>Ingles</td>
+        <td colspan="3">ciencias</td>
+        
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>B</td>
+        <td>Quimica</td>
+        <td colspan="3">Historia</td>
+       
+        <td></td>
+    </tr>
+
+    <tr>    
+        <td>C</td>
+        <td colspan="4">ciencias</td>
+    </tr>
+
+</table>
+</body>
+</html>
